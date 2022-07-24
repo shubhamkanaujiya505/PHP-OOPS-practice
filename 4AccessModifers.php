@@ -1,28 +1,62 @@
 <?php
 // create base class
+// class base{
+
+//     // create access modifier
+//     public $name;
+
+//     // create constructor
+//     public function __construct($n){
+//         $this->name = $n;
+//     }
+//     public function show(){
+//         echo "Your name :".$this->name."<br>";
+//     }
+
+
+// }
+// // create a object
+// $obj = new base("shubham");
+
+// // overwrite properties
+// // $obj->name = "Kanaujiya";
+
+// //calling function
+// $obj->show();
+
+
+?>
+<?php
+// create base class
 class base{
 
     // create access modifier
-    public $name;
+    protected $name;
 
     // create constructor
     public function __construct($n){
         $this->name = $n;
     }
-    public function show(){
+    protected function show(){
         echo "Your name :".$this->name."<br>";
     }
 
 
 }
-// create a object
-$obj = new base("shubham");
+class drived extends base{
+    public function get(){
+        echo "Your name :".$this->name."<br>";
+    }
+}
+// create a object we can access easily
+$obj = new drived("shubham");
 
-// overwrite properties
+// overwrite properties we can not access because it is protected
 // $obj->name = "Kanaujiya";
 
 //calling function
-$obj->show();
+// $obj->show();
+$obj->get();
 
-
+// we can access from drived class 
 ?>
