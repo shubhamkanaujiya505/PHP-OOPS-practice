@@ -17,8 +17,8 @@ class base{
     }
     
 }
-class drived extends base{
-    public static function show(){
+ class drived extends base{
+    public static function sum(){
      echo self::$name;
     }
 }
