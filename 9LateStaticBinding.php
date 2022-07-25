@@ -8,6 +8,10 @@ class base{
     }
 } 
 class derived extends base{
+    public function __construct()
+    {
+        
+    }
     protected static $name = "world";
 }
 
