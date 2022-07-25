@@ -18,7 +18,7 @@ class base{
     
 }
  class drived extends base{
-    public static function sum(){
+    public static function test(){
      echo self::$name;
     }
 }

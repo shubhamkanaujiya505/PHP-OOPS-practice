@@ -2,7 +2,7 @@
 class abc{
     public function first(){
         echo "this is first function"."<br>";
-        return $this;
+        return $this; //use for method chaning
     }
     public function second(){
         echo "this is second function"."<br>";
