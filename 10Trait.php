@@ -5,6 +5,10 @@ trait hello{
     public function sayhello(){
         echo "Hello world"."<br>";
     }
+    
+    public function sayhi(){
+        echo "Hi world"."<br>";
+    }
 }
 
 // define a another trait function to call any class 
@@ -47,4 +51,5 @@ $obj = new base();
 $obj->sayhello();
 // $obj2->sayhello();
 $obj->saybye();
+$obj->sayhi();
 ?>
