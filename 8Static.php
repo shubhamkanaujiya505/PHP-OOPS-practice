@@ -15,10 +15,20 @@ class base{
         // self::sum();
         self::$name = $n;
     }
+    
 }
-// echo base::$name;
-// base::sum();
+class drived extends base{
+    
+        public static function show(){
+            echo self::$name;
+        }
+}
+
+
+// echo base::$name; // use static variable
+// base::sum(); // calling function
 // we not need to make object for static proprties
-$obj = new base("wow");
+// $obj = new base("wow");
+$obj = new base();
 $obj->sum();
 ?>
