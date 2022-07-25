@@ -7,7 +7,7 @@ class base{
      public static function sum(){
         // must use self 
         echo self::$name;
-        // echo $this->name;
+        // echo $this->name; // we can not use this operator
 
         //make constructor
     }

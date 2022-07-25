@@ -27,6 +27,10 @@ class base{
 
 }
 class drived extends base{
+    public function __construct()
+    {
+        
+    }
     public $name = "kanaujiya shubham";
     public function cal($a, $b){
         return $a + $b;
@@ -35,6 +39,7 @@ class drived extends base{
 // $object = new base();
 
 $object1 = new drived();
+
 
 // echo $object->cal(5,8);
 
